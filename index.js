@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use('/api/ui', uiRoutes);       
-app.use('/api/admin', adminRoutes);
+app.use('/ui', uiRoutes);       
+app.use('/admin', adminRoutes);
 
 const MONGO_URI = process.env.MONGO_URI 
 
